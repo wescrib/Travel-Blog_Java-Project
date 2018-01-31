@@ -15,6 +15,7 @@
 	</head>
 
 	<body>
+		<a href="dashboard">Home</a>
 		<h1>Place Name, Country</h1>
 		<p>Blog post will go here and will be a paragraph or two.</p>
 		<ul>

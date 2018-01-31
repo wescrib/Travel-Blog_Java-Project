@@ -17,6 +17,7 @@
 
 	<body>
 		<h1>Welcome</h1>
-		<a href="travel">Proceed</a>
+		<a href="discover">Proceed</a>
+		<a class="btn border-primary" href="/register">Register</a>
 	</body>
 </html>

@@ -26,7 +26,7 @@ public class Posts{
 
 	}
 	
-	@RequestMapping("/travel")
+	@RequestMapping("/discover")
 	public String travel(){
 		return "randomPost";
 	}	
