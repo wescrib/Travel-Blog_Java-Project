@@ -67,7 +67,13 @@ public class UserControl{
 
 	@RequestMapping("dashboard")
 	public String dashboard(HttpSession session, Model model,@ModelAttribute("postPic") Post post){
+		UserModel loggedInUser = (UserModel) session.getAttribute("current_user");
 		if(session.getAttribute("current_user") !=null){
+
+			System.out.println(loggedInUser.getId() + "THIS IS THE ID");
+
+			List<Post> posts = loggedInUser.getPosts();
+			model.addAttribute("posts", posts);
 			
 			return "dashboard";
 		}else{

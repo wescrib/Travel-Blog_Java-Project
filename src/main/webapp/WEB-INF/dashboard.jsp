@@ -45,5 +45,10 @@
 			<input type="submit" value="Submit">
 		</form:form>
 
+		<c:forEach items="${posts}" var="post">
+			
+			<p>${post.id}<img src="/postImages/${post.imageName}" alt="a photo is meant to be here" style="width: 300px;"></p>
+		</c:forEach>
+
 	</body>
 </html>

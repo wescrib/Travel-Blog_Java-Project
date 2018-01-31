@@ -52,7 +52,7 @@ public class UserModel{
 	@DateTimeFormat(pattern="MM:dd:yyyy HH:mm:ss")
 	private Date updatedAt;
 
-	@OneToMany(mappedBy="user", fetch=FetchType.LAZY)
+	@OneToMany(mappedBy="user", fetch=FetchType.EAGER)
 	private List<Post> posts;
 
 	/********************************************************************************************************/
@@ -137,5 +137,13 @@ public class UserModel{
 	public UserModel(){
 		this.createdAt = new Date();
 		this.updatedAt = new Date();
+	}
+
+	public List<Post> getPosts() {
+		return posts;
+	}
+
+	public void setPosts(List<Post> posts) {
+		this.posts = posts;
 	}
 }
