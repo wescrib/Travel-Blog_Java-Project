@@ -18,6 +18,7 @@
 		<a href="logout">Logout</a>
 		<h1>STANDARD USER</h1>
 		${current_user.firstName}
+		<a href="discover">Discover</a>
 
 		<br><br>
 

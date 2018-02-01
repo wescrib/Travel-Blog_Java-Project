@@ -1,0 +1,24 @@
+#container {
+    background-image: url(../background/Pic1.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    position: absolute;
+
+}
+
+#greeting{
+    margin-top: 17%;
+}
+
+#greeting a {
+    color: rgb(48, 48, 48);
+}
+#greeting a:link {
+    text-decoration: none;
+}
+#greeting a:hover {
+    text-decoration: none;
+    color: rgb(0, 92, 145)
+}

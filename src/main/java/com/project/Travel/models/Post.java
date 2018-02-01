@@ -27,7 +27,7 @@ public class Post{
 	private long id;
 
 	// Member variables and annotations go here.
-
+	
 	private String imageName;
 	
 	@DateTimeFormat(pattern="MM:dd:yyyy HH:mm:ss")

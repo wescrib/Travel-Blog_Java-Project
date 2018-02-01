@@ -12,9 +12,18 @@
 		<title>Index</title>
 		<link rel="stylesheet" type="text/css" href="/css/style.css">	
 		<script src="/js/main.js"></script>
+		<style>
+			body{
+				background-image: url(/postImages/${post.imageName});
+				width: 90%;
+				height: 100%;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+		</style>
 	</head>
 
-	<body>
+	<body class="text-light">
 		<a href="dashboard">Home</a>
 		<h1>Place Name, Country</h1>
 		<p>Blog post will go here and will be a paragraph or two.</p>
@@ -24,6 +33,12 @@
 			<li>have links to random post page</li>
 			<li>link to make a post</li>
 			<li></li>
+			
+			${post.id}
+			${post.description}
+			${post.location}
+			${post.country}
+			${post.getUser().getFirstName()}
 		</ul>
 	</body>
 </html>

@@ -10,14 +10,18 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Index</title>
-		<!-- <link rel="stylesheet" type="text/css" href="/css/style.css">	 -->
+		<link rel="stylesheet" type="text/css" href="/css/style.css">	
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<script src="/js/main.js"></script>
 	</head>
 
 	<body>
-		<h1>Welcome</h1>
-		<a href="discover">Proceed</a>
-		<a class="btn border-primary" href="/register">Register</a>
+		<div id="container">
+			<div id="greeting" class="text-center">
+				<h1 class="display-2">Welcome</h1>
+				<a href="discover" class="p-2 mt-3 border border-dark rounded display-5">Discover</a>
+			</div>
+			<a class="btn border-secondary fixed-bottom" href="/register">Register</a>
+		</div>
 	</body>
 </html>

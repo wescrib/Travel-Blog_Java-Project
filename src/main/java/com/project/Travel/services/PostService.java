@@ -5,7 +5,7 @@ import com.project.Travel.models.*;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Random;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -30,8 +30,8 @@ public class PostService {
 		postRepo.save(post);
 	}
 
-	public ArrayList<UserModel> all(){
-		return(ArrayList<UserModel> )userRepo.findAll();
+	public ArrayList<Post> all(){
+		return(ArrayList<Post> )postRepo.findAll();
 	}
 
 	public Post findByID(long id){
@@ -41,6 +41,15 @@ public class PostService {
 	public void delete(long id){
 		postRepo.delete(id);
 	}
+
+	// public void generateRandId(int min, int max){
+	// 	if(min >= max){
+	// 		throw new IllegalArgumentException("min cannot be greater than max");
+	// 	}
+	// 	Random rand = new Random();
+	// 	int num = rand.nextInt((max - min) + 1) + min;
+		
+	// }
 
 
 	
