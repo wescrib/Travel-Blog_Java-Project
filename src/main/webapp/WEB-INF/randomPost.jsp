@@ -10,7 +10,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Index</title>
-		<link rel="stylesheet" type="text/css" href="/css/style.css">	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">	
+		<!-- <link rel="stylesheet" type="text/css" href="/css/style.css"> -->
 		<script src="/js/main.js"></script>
 		<style>
 			body{
@@ -20,25 +21,39 @@
 				background-size: cover;
 				background-repeat: no-repeat;
 			}
+
+			.content{
+				float: right;
+				position: absolute;;
+				bottom: 10px;
+				right: 50px;
+			}
+
+			.content p {
+				text-shadow: 1px 1px 3px black;
+			}
+
+			#basic {
+				position:absolute;
+				right: 5px;
+			}
+
+			.btn {
+				background-color: transparent;
+			}
+
 		</style>
 	</head>
 
 	<body class="text-light">
-		<a href="dashboard">Home</a>
-		<h1>Place Name, Country</h1>
-		<p>Blog post will go here and will be a paragraph or two.</p>
-		<ul>
-			<li>build login page</li>
-			<li>after user logs in, send them to dashboard page</li>
-			<li>have links to random post page</li>
-			<li>link to make a post</li>
-			<li></li>
-			
-			${post.id}
-			${post.description}
-			${post.location}
-			${post.country}
-			${post.getUser().getFirstName()}
-		</ul>
+		<a href="dashboard" class="text-center">Home</a>
+		<a id="basic" class="m-5 btn btn-light text-primary" href="discover">⮚</a>
+		<div class="content">
+
+			<!-- <p>${post.description}</p> -->
+			<p class="display-2">${post.location}</p>
+			<p class="display-2">${post.country}</p>
+			<p>By ${post.getUser().getFirstName()}</p>
+		</div>
 	</body>
 </html>

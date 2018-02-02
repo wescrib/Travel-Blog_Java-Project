@@ -22,3 +22,8 @@
     text-decoration: none;
     color: rgb(0, 92, 145)
 }
+
+.content {
+    text-shadow: 10px, 10px, 10px #ff0000;
+    font-size: 36pt;
+}
